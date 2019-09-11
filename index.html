@@ -5,9 +5,12 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
       <a-marker preset="hiro">
-          <a-box position='0 0.5 0' material='color: yellow;'></a-box>
+
+          <a-box position='0 0.5 0' material='color: yellow;'></a-box> //cylinder shape
+          <a-text value="hello art 107??" position='0 0.5 0' rotation="0 0 45" material='color: yellow;'></a-box> //rotation is to rotate the text
+          
       </a-marker>
-      <a-entity camera></a-entity>
+      <a-entity camera></a-entity> // the link to your camera
     </a-scene>
   </body>
 </html>
