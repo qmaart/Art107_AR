@@ -12,9 +12,18 @@
 
 <a-marker-camera preset="hiro">
 
-<a-cylinder src= "https://cdn.glitch.com/7626c818-cfd4-4341-81d6-432c739679fc%2FTexturesCom_Insects0040_1_masked_S.png?v=1568666772944" position= "0 0.5 0" material= "color: white" height=".5" radius=".25"></a-cylinder> //a-frame is using meters
+<!-- <a-cylinder src= "https://cdn.glitch.com/7626c818-cfd4-4341-81d6-432c739679fc%2FTexturesCom_Insects0040_1_masked_S.png?v=1568666772944" position= "0 0.5 0" material= "color: white" height=".5" radius=".25"></a-cylinder> //a-frame is using meters -->
 
-<a-text value="Hello Art 107!!" position="-0.5 0 -1" color="#FF16EB" rotation="-45 0 0"></a-text>
+<a-box
+  src="https://cdn.glitch.com/7626c818-cfd4-4341-81d6-432c739679fc%2FTexturesCom_Insects0040_1_masked_S.png?v=1568666772944"
+  position="0 0 -2"
+  rotation="0 45 45"
+  scale="2 2 2"
+  animation__position="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
+  animation__mouseenter="property: scale; to: 2.3 2.3 2.3; dur: 300; startEvents: mouseenter"
+  animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
+
+<a-text value="Hello Quentina!!" position="0 -5 -2" color="#FFD7E7" rotation="-45 0 0"></a-text>
 
 </a-marker>
 
